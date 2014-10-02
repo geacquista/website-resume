@@ -1,0 +1,311 @@
+/*
+
+CSS DOCUMENT 
+------------
+
+Author: Sahibjot Saggu
+Date: August 30, 2014
+Filename: style.css
+
+*/
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+a {
+	color: #FFF;
+}
+
+/* eot's for IE */
+
+@font-face {
+	font-family: GothamLight;
+	src: url("fonts/Gotham-Light.eot");
+}
+
+@font-face {
+	font-family: GothamThin;
+	src: url("fonts/Gotham-Thin.eot");
+}
+
+@font-face {
+	font-family: GothamLight;
+	src: url("fonts/Gotham-Light.otf") format("opentype");
+	src: url("fonts/Gotham-Light.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: GothamThin;
+	src: url("fonts/Gotham-Thin.otf") format("opentype");
+	src: url("fonts/Gotham-Thin.ttf") format("truetype");
+}
+
+body {
+	background: #FFF;
+	overflow-x: hidden;
+}
+
+#main_wrapper {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: white url("images/simple.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+#navbar {
+	position: fixed;
+	top: 50px;
+	right: 0px;
+	width: 100%;
+	height: 55px;
+	background: transparent;
+	-webkit-transition: top 0.2s, background 0.2s;
+	-moz-transition: top 0.2s, background 0.2s;
+	transition: top 0.2s, background 0.2s;
+	-webkit-animation: fadeIn 2s;
+	z-index: 2;
+}
+
+@-webkit-keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@-moz-keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+#navbar ul {
+	position: absolute;
+	top: 0px;
+	right: 100px;
+	list-style-type: none;
+}
+
+#navbar ul li {
+	display: block;
+	float: left;
+	width: 150px;
+	height: 55px;
+	background: transparent url("images/three_bars.png") no-repeat;
+	background-size: 15px 10px;
+	background-position: 110px 22.5px;
+	font-family: GothamLight;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 55px;
+	cursor: pointer;
+	color: #FFF;
+}
+
+#sidebar {
+	position: fixed;
+	top: 0px;
+	right: -250px;
+	width: 250px;
+	height: 100%;
+	background: #222;
+}
+
+#close_sidebar {
+	position: absolute;
+	top: 50px;
+	right: 50px;
+	width: 25px;
+	height: 25px;
+	background: transparent url("images/cross.png");
+	background-size: cover;
+	cursor: pointer;
+	-webkit-transition: background 0.2s;
+	-moz-transition: background 0.2s;
+	transition: background 0.2s;
+}
+
+#contents {
+	position: absolute;
+	top: 100px;
+	left: 50px;
+}
+
+#contents ul {
+	list-style-type: none;
+}
+
+#contents ul li {
+	display: block;
+	width: auto;
+	height: 30px;
+	line-height: 30px;
+	font-family: GothamLight;
+	font-size: 15px;
+	color: #888;
+	cursor: pointer;
+	-webkit-transition: color 0.2s;
+	-moz-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+#contents ul li:hover {
+	color: #FFF;
+}
+
+#contents ul li#home {
+	color: #FFF;
+}
+
+#sidebar_footer {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 50px;
+	background: #111;
+	text-align: center;
+	line-height: 50px;
+	color: #FFF;
+	font-family: GothamLight;
+}
+
+#close_sidebar:hover {
+	background: transparent url("images/cross_white.png");
+	background-size: cover;
+}
+
+#welcome {
+	position: absolute;
+	top: calc(50% - 50px);
+	left: calc(50% - 450px);
+	width: 900px;
+	height: 100px;
+	font-family: GothamLight;
+	text-align: center;
+	line-height: 100px;
+	font-size: 70px;
+	color: #FFF;
+	-webkit-animation: fadeIn 2s;
+	-moz-animation: fadeIn 2s;
+	animation: fadeIn 2s;
+}
+
+#name {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 300px;
+	height: 55px;
+	line-height: 55px;
+	text-align: center;
+	color: #FFF;
+	font-family: GothamLight;
+	font-size: 17px;
+	cursor: pointer;
+	-webkit-transition: color 1s;
+	-moz-transition: color 1s;
+	transition: color 1s;
+}
+
+#down_arrow {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 75px;
+	background: transparent url("images/down_arrow.png") no-repeat center center;
+	background-size: 75px;
+	cursor: pointer;
+	-webkit-transition: background-position 0.2s;
+	-moz-transition: background-position 0.2s;
+	transition: background-position 0.2s;
+	-webkit-animation: fadeIn 2s;
+}
+
+#down_arrow:hover {
+	background-position: center 10px;
+}
+
+#main_content {
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: #26343F url("images/peaks.png") no-repeat center center;
+	background-size: cover;
+	background-position: 0px 150px;
+	-webkit-transition: background-position 0.5s;
+	-moz-transition: background-position 0.5s;
+	transition: background-position 0.5s;
+}
+
+#heading_title {
+	margin: 100px auto;
+	width: 600px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	font-family: GothamLight;
+	font-weight: bold;
+	font-size: 50px;
+	color: #FFF;
+}
+
+#introduction {
+	position: absolute;
+	top: 0px;
+	left: 5%;
+	width: 500px;
+	height: auto;
+	font-family: GothamLight;
+	font-size: 30px;
+	text-align: left;
+	color: #FFF;
+}
+
+#main_content2 {
+	position: absolute;
+	top: 200%;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: #D2E294 url("images/bamboo.png") no-repeat center center;
+	background-position: 300px 0px;
+	background-size: cover;
+	-webkit-transition: background-position 0.5s;
+	-moz-transition: background-position 0.5s;
+	transition: background-position 0.5s;	
+}
+
+#edu_table {
+	position: absolute;
+	top: 200px;
+	left: calc(50% - 300px);
+	width: 600px;
+	font-family: GothamLight;
+	font-size: 30px;
+	color: green;
+	text-align: center;
+}
+
+#main_content3 {
+	position: absolute;
+	top: 300%;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: #FFF url("images/city.png") no-repeat center bottom;
+	background-size: cover;
+	background-position: 0px 210px;
+	-webkit-transition: background-position 0.5s;
+}

@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>Clock Animation</title>
+		<style type="text/css">
+			body {
+				background: #333;
+			}
+
+			#clock-face {
+				position: absolute;
+				top: 100px;
+				left: 100px;
+				width: 120px;
+				height: 120px;
+				border: 2px solid white;
+				border-radius: 100%;
+			}
+
+			#hand {
+				position: absolute;
+				top: 60px;
+				left: 60px;
+				width: 50px;
+				height: 2px;
+				border: 1px solid white;
+				border-radius: 5px;
+				-webkit-animation: rot 5s;
+			}
+
+			@-webkit-keyframes rot {
+				from {
+					-webkit-transform: rotate(0deg);
+				}
+				to {
+					-webkit-transform: rotate(360deg);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="clock-face">
+			<div id="hand"></div>
+		</div>
+	</body>
+</html>

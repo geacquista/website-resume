@@ -1,0 +1,267 @@
+<html>
+	<head>
+		<title>floating circles</title>
+		<style type="text/css">
+		body {
+			background: #333;
+			overflow: hidden;
+		}
+		#circle1, #circle2, #circle3, #circle4,
+		#circle5, #circle6, #circle7, #circle8,
+		#circle8, #circle9, #circle10 {
+			position: absolute;
+			bottom: -5%;
+			left: 0px;
+			width: 10px;
+			height: 10px;
+			border-radius: 5px;
+			background: orange;
+			opacity: 1;
+			}
+
+		#message {
+			position: absolute;
+			top: 50px;
+			left: 200px;
+			color: #FFF;
+		}
+		</style>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				function bubblesRise() {
+					var rand_pos = (Math.random() * 3000)%($(window).width());
+					var width_pos = Math.random() * 20;
+					$("#circle1").css("left", rand_pos + "px");
+					$("#circle1").css("width", width_pos + "px");
+					$("#circle1").css("height", width_pos + "px");
+					$("#circle1").css("border-radius", width_pos/2 + "px");
+					$("#circle1").animate({'bottom' : '100%', 'opacity' : '0.0'}, (Math.random()*20000)%20000 + 5000);
+					$("#circle1").animate({'bottom' : '-5%', 'opacity' : '1'}, 0);
+
+					var rand_pos = (Math.random() * 3000)%($(window).width());
+					var width_pos = Math.random() * 20;
+					$("#circle2").css("left", rand_pos + "px");
+					$("#circle2").css("width", width_pos + "px");
+					$("#circle2").css("height", width_pos + "px");
+					$("#circle2").css("border-radius", width_pos/2 + "px");
+					$("#circle2").animate({'bottom' : '100%', 'opacity' : '0.0'}, (Math.random()*20000)%20000 + 5000);
+					$("#circle2").animate({'bottom' : '-5%', 'opacity' : '1'}, 0);
+
+
+					var rand_pos = (Math.random() * 3000)%($(window).width());
+					var width_pos = Math.random() * 20;
+					$("#circle3").css("left", rand_pos + "px");
+					$("#circle3").css("width", width_pos + "px");
+					$("#circle3").css("height", width_pos + "px");
+					$("#circle3").css("border-radius", width_pos/2 + "px");
+					$("#circle3").animate({'bottom' : '100%', 'opacity' : '0.0'}, (Math.random()*20000)%20000 + 5000);
+					$("#circle3").animate({'bottom' : '-5%', 'opacity' : '1'}, 0);
+
+
+					var rand_pos = (Math.random() * 3000)%($(window).width());
+					var width_pos = Math.random() * 20;
+					$("#circle4").css("left", rand_pos + "px");
+					$("#circle4").css("width", width_pos + "px");
+					$("#circle4").css("height", width_pos + "px");
+					$("#circle4").css("border-radius", width_pos/2 + "px");
+					$("#circle4").animate({'bottom' : '100%', 'opacity' : '0.0'}, (Math.random()*20000)%20000 + 5000);
+					$("#circle4").animate({'bottom' : '-5%', 'opacity' : '1'}, 0);
+
+
+					var rand_pos = (Math.random() * 3000)%($(window).width());
+					var width_pos = Math.random() * 20;
+					$("#circle5").css("left", rand_pos + "px");
+					$("#circle5").css("width", width_pos + "px");
+					$("#circle5").css("height", width_pos + "px");
+					$("#circle5").css("border-radius", width_pos/2 + "px");
+					$("#circle5").animate({'bottom' : '100%', 'opacity' : '0.0'}, (Math.random()*20000)%20000 + 5000);
+					$("#circle5").animate({'bottom' : '-5%', 'opacity' : '1'}, 0);
+
+
+					var rand_pos = (Math.random() * 3000)%($(window).width());
+					var width_pos = Math.random() * 20;
+					$("#circle6").css("left", rand_pos + "px");
+					$("#circle6").css("width", width_pos + "px");
+					$("#circle6").css("height", width_pos + "px");
+					$("#circle6").css("border-radius", width_pos/2 + "px");
+					$("#circle6").animate({'bottom' : '100%', 'opacity' : '0.0'}, (Math.random()*20000)%20000 + 5000);
+					$("#circle6").animate({'bottom' : '-5%', 'opacity' : '1'}, 0);
+
+
+					var rand_pos = (Math.random() * 3000)%($(window).width());
+					var width_pos = Math.random() * 20;
+					$("#circle7").css("left", rand_pos + "px");
+					$("#circle7").css("width", width_pos + "px");
+					$("#circle7").css("height", width_pos + "px");
+					$("#circle7").css("border-radius", width_pos/2 + "px");
+					$("#circle7").animate({'bottom' : '100%', 'opacity' : '0.0'}, (Math.random()*20000)%20000 + 5000);	
+					$("#circle7").animate({'bottom' : '-5%', 'opacity' : '1'}, 0);
+
+					
+					var rand_pos = (Math.random() * 3000)%($(window).width());
+					var width_pos = Math.random() * 20;
+					$("#circle8").css("left", rand_pos + "px");
+					$("#circle8").css("width", width_pos + "px");
+					$("#circle8").css("height", width_pos + "px");
+					$("#circle8").css("border-radius", width_pos/2 + "px");
+					$("#circle8").animate({'bottom' : '100%', 'opacity' : '0.0'}, (Math.random()*20000)%20000 + 5000);
+					$("#circle8").animate({'bottom' : '-5%', 'opacity' : '1'}, 0);
+
+
+					var rand_pos = (Math.random() * 3000)%($(window).width());
+					var width_pos = Math.random() * 20;
+					$("#circle9").css("left", rand_pos + "px");
+					$("#circle9").css("width", width_pos + "px");
+					$("#circle9").css("height", width_pos + "px");
+					$("#circle9").css("border-radius", width_pos/2 + "px");
+					$("#circle9").animate({'bottom' : '100%', 'opacity' : '0.0'}, (Math.random()*20000)%20000 + 5000);
+					$("#circle9").animate({'bottom' : '-5%', 'opacity' : '1'}, 0);
+
+
+					var rand_pos = (Math.random() * 3000)%($(window).width());
+					var width_pos = Math.random() * 20;
+					$("#circle10").css("left", rand_pos + "px");
+					$("#circle10").css("width", width_pos + "px");
+					$("#circle10").css("height", width_pos + "px");
+					$("#circle10").css("border-radius", width_pos/2 + "px");
+					$("#circle10").animate({'bottom' : '100%', 'opacity' : '0.0'}, (Math.random()*20000)%20000 + 5000);	
+					$("#circle10").animate({'bottom' : '-5%', 'opacity' : '1'}, 0);
+
+
+
+
+
+
+
+
+					var rand_pos = (Math.random() * 3000)%($(window).width());
+					var width_pos = Math.random() * 20;
+					$("#circle11").css("left", rand_pos + "px");
+					$("#circle11").css("width", width_pos + "px");
+					$("#circle11").css("height", width_pos + "px");
+					$("#circle11").css("border-radius", width_pos/2 + "px");
+					$("#circle11").animate({'bottom' : '100%', 'opacity' : '0.0'}, (Math.random()*20000)%20000 + 5000);
+					$("#circle11").animate({'bottom' : '-5%', 'opacity' : '1'}, 0);
+
+					var rand_pos = (Math.random() * 3000)%($(window).width());
+					var width_pos = Math.random() * 20;
+					$("#circle12").css("left", rand_pos + "px");
+					$("#circle12").css("width", width_pos + "px");
+					$("#circle12").css("height", width_pos + "px");
+					$("#circle12").css("border-radius", width_pos/2 + "px");
+					$("#circle12").animate({'bottom' : '100%', 'opacity' : '0.0'}, (Math.random()*20000)%20000 + 5000);
+					$("#circle12").animate({'bottom' : '-5%', 'opacity' : '1'}, 0);
+
+
+					var rand_pos = (Math.random() * 3000)%($(window).width());
+					var width_pos = Math.random() * 20;
+					$("#circle13").css("left", rand_pos + "px");
+					$("#circle13").css("width", width_pos + "px");
+					$("#circle13").css("height", width_pos + "px");
+					$("#circle13").css("border-radius", width_pos/2 + "px");
+					$("#circle13").animate({'bottom' : '100%', 'opacity' : '0.0'}, (Math.random()*20000)%20000 + 5000);
+					$("#circle13").animate({'bottom' : '-5%', 'opacity' : '1'}, 0);
+
+
+					var rand_pos = (Math.random() * 3000)%($(window).width());
+					var width_pos = Math.random() * 20;
+					$("#circle14").css("left", rand_pos + "px");
+					$("#circle14").css("width", width_pos + "px");
+					$("#circle14").css("height", width_pos + "px");
+					$("#circle14").css("border-radius", width_pos/2 + "px");
+					$("#circle14").animate({'bottom' : '100%', 'opacity' : '0.0'}, (Math.random()*20000)%20000 + 5000);
+					$("#circle14").animate({'bottom' : '-5%', 'opacity' : '1'}, 0);
+
+
+					var rand_pos = (Math.random() * 3000)%($(window).width());
+					var width_pos = Math.random() * 20;
+					$("#circle15").css("left", rand_pos + "px");
+					$("#circle15").css("width", width_pos + "px");
+					$("#circle15").css("height", width_pos + "px");
+					$("#circle15").css("border-radius", width_pos/2 + "px");
+					$("#circle15").animate({'bottom' : '100%', 'opacity' : '0.0'}, (Math.random()*20000)%20000 + 5000);
+					$("#circle15").animate({'bottom' : '-5%', 'opacity' : '1'}, 0);
+
+
+					var rand_pos = (Math.random() * 3000)%($(window).width());
+					var width_pos = Math.random() * 20;
+					$("#circle16").css("left", rand_pos + "px");
+					$("#circle16").css("width", width_pos + "px");
+					$("#circle16").css("height", width_pos + "px");
+					$("#circle16").css("border-radius", width_pos/2 + "px");
+					$("#circle16").animate({'bottom' : '100%', 'opacity' : '0.0'}, (Math.random()*20000)%20000 + 5000);
+					$("#circle16").animate({'bottom' : '-5%', 'opacity' : '1'}, 0);
+
+
+					var rand_pos = (Math.random() * 3000)%($(window).width());
+					var width_pos = Math.random() * 20;
+					$("#circle17").css("left", rand_pos + "px");
+					$("#circle17").css("width", width_pos + "px");
+					$("#circle17").css("height", width_pos + "px");
+					$("#circle17").css("border-radius", width_pos/2 + "px");
+					$("#circle17").animate({'bottom' : '100%', 'opacity' : '0.0'}, (Math.random()*20000)%20000 + 5000);	
+					$("#circle17").animate({'bottom' : '-5%', 'opacity' : '1'}, 0);
+
+					
+					var rand_pos = (Math.random() * 3000)%($(window).width());
+					var width_pos = Math.random() * 20;
+					$("#circle18").css("left", rand_pos + "px");
+					$("#circle18").css("width", width_pos + "px");
+					$("#circle18").css("height", width_pos + "px");
+					$("#circle18").css("border-radius", width_pos/2 + "px");
+					$("#circle18").animate({'bottom' : '100%', 'opacity' : '0.0'}, (Math.random()*20000)%20000 + 5000);
+					$("#circle18").animate({'bottom' : '-5%', 'opacity' : '1'}, 0);
+
+
+					var rand_pos = (Math.random() * 3000)%($(window).width());
+					var width_pos = Math.random() * 20;
+					$("#circle19").css("left", rand_pos + "px");
+					$("#circle19").css("width", width_pos + "px");
+					$("#circle19").css("height", width_pos + "px");
+					$("#circle19").css("border-radius", width_pos/2 + "px");
+					$("#circle19").animate({'bottom' : '100%', 'opacity' : '0.0'}, (Math.random()*20000)%20000 + 5000);
+					$("#circle19").animate({'bottom' : '-5%', 'opacity' : '1'}, 0);
+
+
+					var rand_pos = (Math.random() * 3000)%($(window).width());
+					var width_pos = Math.random() * 20;
+					$("#circle20").css("left", rand_pos + "px");
+					$("#circle20").css("width", width_pos + "px");
+					$("#circle20").css("height", width_pos + "px");
+					$("#circle20").css("border-radius", width_pos/2 + "px");
+					$("#circle20").animate({'bottom' : '100%', 'opacity' : '0.0'}, (Math.random()*20000)%20000 + 5000);	
+					$("#circle20").animate({'bottom' : '-5%', 'opacity' : '1'}, 0);
+
+
+
+				}
+				setInterval(bubblesRise, 20000);
+			});
+		</script>
+	</head>
+	<body>
+		<div id="circle1"></div>
+		<div id="circle2"></div>
+		<div id="circle3"></div>
+		<div id="circle4"></div>
+		<div id="circle5"></div>
+		<div id="circle6"></div>
+		<div id="circle7"></div>
+		<div id="circle8"></div>
+		<div id="circle9"></div>
+		<div id="circle10"></div>
+
+		<div id="circle11"></div>
+		<div id="circle12"></div>
+		<div id="circle13"></div>
+		<div id="circle14"></div>
+		<div id="circle15"></div>
+		<div id="circle16"></div>
+		<div id="circle17"></div>
+		<div id="circle18"></div>
+		<div id="circle19"></div>
+		<div id="circle20"></div>		
+		<div id="message"></div>
+	</body>
+</html>
