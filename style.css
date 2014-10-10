@@ -42,6 +42,11 @@ a {
 	src: url("fonts/Gotham-Thin.ttf") format("truetype");
 }
 
+@font-face {
+	font-family: SegoeUIL;
+	src: url("fonts/segoeuil.ttf") format("truetype");
+}
+
 body {
 	background: #FFF;
 	overflow-x: hidden;
@@ -176,6 +181,7 @@ body {
 	line-height: 50px;
 	color: #FFF;
 	font-family: GothamLight;
+	font-weight: bold;
 }
 
 #close_sidebar:hover {
@@ -189,7 +195,8 @@ body {
 	left: calc(50% - 450px);
 	width: 900px;
 	height: 100px;
-	font-family: GothamLight;
+	font-family: Raleway;
+	font-weight: 300;
 	text-align: center;
 	line-height: 100px;
 	font-size: 70px;
@@ -210,6 +217,7 @@ body {
 	color: #FFF;
 	font-family: GothamLight;
 	font-size: 17px;
+	font-weight: bold;
 	cursor: pointer;
 	-webkit-transition: color 1s;
 	-moz-transition: color 1s;
@@ -243,10 +251,6 @@ body {
 	height: 100%;
 	background: #26343F url("images/peaks.png") no-repeat center center;
 	background-size: cover;
-	background-position: 0px 150px;
-	-webkit-transition: background-position 0.5s;
-	-moz-transition: background-position 0.5s;
-	transition: background-position 0.5s;
 }
 
 #heading_title {
@@ -280,11 +284,7 @@ body {
 	width: 100%;
 	height: 100%;
 	background: #D2E294 url("images/bamboo.png") no-repeat center center;
-	background-position: 300px 0px;
-	background-size: cover;
-	-webkit-transition: background-position 0.5s;
-	-moz-transition: background-position 0.5s;
-	transition: background-position 0.5s;	
+	background-size: cover;	
 }
 
 #edu_table {
@@ -305,7 +305,5 @@ body {
 	width: 100%;
 	height: 100%;
 	background: #FFF url("images/city.png") no-repeat center bottom;
-	background-size: cover;
-	background-position: 0px 210px;
-	-webkit-transition: background-position 0.5s;
+	background-size: 100%;
 }

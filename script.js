@@ -54,15 +54,14 @@ $(document).ready(function(){
 		/*$("#name").html($(document).scrollTop());
 		$("#menu").html($(window).height());*/
 		if ($(document).scrollTop() >= $(window).height() - 150) {
-			$("#name").css("font-weight", "bold");
 			$("#navbar").css("top", "0px");
 			$("#navbar").css("background", "#222");
 			$("#intro").css("color", "#FFF");
 			$("#home").css("color", "#888");
 			$("#edu").css("color", "#888");
 			$("#exp").css("color", "#888");
-			$("#main_content").css("background-position", "0px 0px");
-			$("#main_content2").css("background-position", "300px 0px");	
+			//$("#main_content").css("background-position", "0px 0px");
+			//$("#main_content2").css("background-position", "300px 0px");	
 		}
 
 		if ($(document).scrollTop() >= $(window).height()*2 - 150) {
@@ -70,19 +69,18 @@ $(document).ready(function(){
 			$("#home").css("color", "#888");			
 			$("#edu").css("color", "#FFF");
 			$("#exp").css("color", "#888");
-			$("#main_content2").css("background-position", "0px 0px");	
+			//$("#main_content2").css("background-position", "0px 0px");	
 		}
 
 		if ($(document).scrollTop() < $(window).height() - 150) {
-			$("#name").css("font-weight", "normal");
 			$("#navbar").css("top", "50px");
 			$("#navbar").css("background", "transparent");
 			$("#home").css("color", "#FFF");
 			$("#intro").css("color", "#888");
 			$("#edu").css("color", "#888");
 			$("#exp").css("color", "#888");
-			$("#main_content").css("background-position", "0px 150px");	
-			$("#main_content2").css("background-position", "300px 0px");	
+			//$("#main_content").css("background-position", "0px 150px");	
+			//$("#main_content2").css("background-position", "300px 0px");	
 		}
 
 		if ($(document).scrollTop() >= $(window).height()*3 - 150) {
@@ -90,7 +88,7 @@ $(document).ready(function(){
 			$("#home").css("color", "#888");			
 			$("#edu").css("color", "#888");
 			$("#exp").css("color", "#FFF");
-			$("#main_content3").css("background-position", "0px -210px");
+			//$("#main_content3").css("background-position", "0px -210px");
 		}
 	})
 
