@@ -1,4 +1,4 @@
-website-resume
+Website Resume
 ==============
 
 Personal website resume to display my web development skills.

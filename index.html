@@ -6,15 +6,121 @@
 		<meta name="keywords" content="personal, Sahibjot, Saggu, website, resume">
 		<meta name="author" content="Sahibjot Saggu">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-		<title>Sahibjot Saggu</title>
 		<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500' rel='stylesheet' type='text/css'>
+		<title>Sahibjot Saggu</title>
 		<link rel="stylesheet" type="text/css" href="style.css" />
+		<style type="text/css">
+		#main_wrapper {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			height: 100%;
+			background: white url("images/deer.png") no-repeat center center;
+			opacity: 1;
+			background-size: cover;
+			box-shadow: 0px 0px 15px #000;
+			z-index: 3;
+		}
+
+		@-webkit-keyframes vis {
+			0% {opacity: 0;}
+			100% {opacity: 1;}
+		}
+
+		#welcome {
+			position: absolute;
+			top: 150px;
+			left: calc(50% - 450px);
+			width: 900px;
+			height: 100px;
+			font-family: Raleway;
+			font-weight: 300;
+			text-align: center;
+			line-height: 100px;
+			font-size: 70px;
+			color: #FFF;
+		}
+
+		#down_arrow {
+			position: absolute;
+			bottom: 0px;
+			left: 0px;
+			width: 100%;
+			height: 75px;
+			background: transparent url("images/down_arrow.png") no-repeat center center;
+			background-size: 75px;
+			cursor: pointer;
+			-webkit-transition: background-position 0.2s;
+			-moz-transition: background-position 0.2s;
+			transition: background-position 0.2s;
+		}
+
+		#down_arrow:hover {
+			background-position: center 10px;
+		}
+
+		#navbar {
+			position: fixed;
+			top: 50px;
+			right: 0px;
+			width: 100%;
+			height: 55px;
+			background: transparent;
+			-webkit-transition: top 0.2s, background 0.2s;
+			-moz-transition: top 0.2s, background 0.2s;
+			transition: top 0.2s, background 0.2s;
+			z-index: 3;
+		}
+
+		#navbar ul {
+			position: absolute;
+			top: 0px;
+			right: 100px;
+			list-style-type: none;
+		}
+
+		#navbar ul li {
+			display: block;
+			float: left;
+			width: 150px;
+			height: 55px;
+			background: transparent url("images/three_bars.png") no-repeat;
+			background-size: 15px 10px;
+			background-position: 110px 22.5px;
+			font-family: Raleway;
+			font-size: 15px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 55px;
+			cursor: pointer;
+			color: #FFF;
+		}	
+		
+		#name {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 300px;
+			height: 55px;
+			line-height: 55px;
+			text-align: center;
+			color: #FFF;
+			font-family: Raleway;
+			font-size: 17px;
+			font-weight: bold;
+			cursor: pointer;
+			-webkit-transition: color 1s;
+			-moz-transition: color 1s;
+			transition: color 1s;
+		}
+		</style>
 	</head>
 	<body>
 
 		<div id="main_wrapper">
 
-			<div id="welcome">Welcome to my website.</div>
+			<div id="welcome">Welcome.</div>
 
 			<div id="down_arrow"></div>
 		</div> <!-- end main_wrapper div -->
@@ -29,24 +135,26 @@
 
 
 		<div id="main_content">
-			<p id="heading_title">INTRODUCTION</p>
+			<p id="heading_title">ABOUT ME</p>
 			<div id="introduction">
 				Hello. My name is Sahibjot Saggu. I'm a first-year university student at the <a href="http://www.uwaterloo.ca/">University of Waterloo</a> studying Nanotechnology Engineering.
 			</div>	
 		</div> <!-- end main_content div -->
 
 		<div id="main_content2">
-			<p id="heading_title" style="color: green;">EDUCATION</p>
+			<p id="heading_title" style="color: #FFF;">EDUCATION</p>
 			<table border="0" id="edu_table">
 				<tr><td style="font-weight: bold;">Grand River Collegiate Institute</td></tr>
 				<tr><td>2010 - 2014</td></tr>
 				<tr style="height: 50px;" valign="bottom"><td style="font-weight: bold;">University of Waterloo</td></tr>
+				<tr><td>Candidate for Bachelor of Applied Science</td></tr>
 				<tr><td>2014 - 2019</td></tr>
 			</table>
 		</div> <!-- end main_content2 div -->
 
 		<div id="main_content3">
 			<p id="heading_title" style="color: black;">EXPERIENCE</p>
+			<p id="under_cons">... 'Experience' section under construction ...</p>
 		</div> <!-- end main_content3 div -->
 
 
@@ -55,7 +163,7 @@
 			<div id="contents">
 				<ul>
 					<li id="home">HOME</li>
-					<li id="intro">INTRODUCTION</li>
+					<li id="intro">ABOUT ME</li>
 					<li id="edu">EDUCATION</li>
 					<li id="exp">EXPERIENCE</li>
 					<li>PORTFOLIO</li>
@@ -67,8 +175,149 @@
 				SAHIBJOT SAGGU
 			</div>
 		</div> <!-- end sidebar div -->
+
+		<div id="footer">
+			<div id="github"></div>
+			<div id="simpled"></div>
+		</div> <!-- end footer div -->
+
 		<script type="text/javascript" src="jquery.js"></script>
-		<script type="text/javascript" src="easings.js"></script>
-		<script type="text/javascript" src="script.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+			$("#introduction").css("top", (($(window).height() - $("#introduction").height()) / 2) + "px");
+			$("#edu_table").css("top", (($(window).height() - $("#edu_table").height()) / 2) + "px");
+			//$("#main_wrapper").css("background", "#C0433E url('images/deer.png') no-repeat center center");
+			//$("#main_wrapper").css("background-size", "cover")
+
+			$("#menu").click(function(){
+				if ($("#main_wrapper").css("left") == "0px") {
+					$("#main_wrapper").animate({'left' : '-250px'});
+					$("#main_content").animate({'left' : '-250px'});
+					$("#main_content2").animate({'left' : '-250px'});
+					$("#main_content3").animate({'left' : '-250px'});
+					$("#navbar").animate({'left' : '-250px'});
+					$("#sidebar").animate({'right' : '0px'});
+					$("#footer").animate({'left' : '-250px'});
+				}
+				else {
+					$("#main_wrapper").animate({'left' : '0px'});
+					$("#main_content").animate({'left' : '0px'});
+					$("#main_content2").animate({'left' : '0px'});
+					$("#main_content3").animate({'left' : '0px'});
+					$("#navbar").animate({'left' : '0px'});
+					$("#sidebar").animate({'right' : '-250px'});
+					$("#footer").animate({'left' : '0px'});
+				}
+			});
+
+			$("#close_sidebar").click(function(){
+				$("#main_wrapper").animate({'left' : '0px'});
+				$("#main_content").animate({'left' : '0px'});
+				$("#main_content2").animate({'left' : '0px'});
+				$("#main_content3").animate({'left' : '0px'});
+				$("#navbar").animate({'left' : '0px'});
+				$("#sidebar").animate({'right' : '-250px'});
+				$("#footer").animate({'left' : '0px'});
+			});
+
+			$("#name").click(function() {
+				window.location = "http://www.sahibjotsaggu.com/";
+			});
+
+			$("#github").click(function() {
+				window.location = "https://github.com/sahibjotsaggu/website-resume";
+			});
+
+			$("#simpled").click(function() {
+				window.location = "http://simpledesktops.com/browse";
+			});
+
+			$("#down_arrow").click(function() {
+				$("html, body").animate({
+					scrollTop : $("#main_content").offset().top
+				});
+				return false;
+			});
+
+			$(document).scroll(function() {
+				/*$("#name").html($(document).scrollTop());
+				$("#menu").html($(window).height());*/
+				if ($(document).scrollTop() >= $(window).height() - 150) {
+					$("#navbar").css("top", "0px");
+					$("#navbar").css("background", "#222");
+					$("#intro").css("color", "#FFF");
+					$("#home").css("color", "#888");
+					$("#edu").css("color", "#888");
+					$("#exp").css("color", "#888");
+					//$("#main_content").css("background-position", "0px 0px");
+					//$("#main_content2").css("background-position", "300px 0px");	
+				}
+
+				if ($(document).scrollTop() >= $(window).height()*2 - 150) {
+					$("#intro").css("color", "#888");
+					$("#home").css("color", "#888");			
+					$("#edu").css("color", "#FFF");
+					$("#exp").css("color", "#888");
+					//$("#main_content2").css("background-position", "0px 0px");	
+				}
+
+				if ($(document).scrollTop() < $(window).height() - 150) {
+					$("#navbar").css("top", "50px");
+					$("#navbar").css("background", "transparent");
+					$("#home").css("color", "#FFF");
+					$("#intro").css("color", "#888");
+					$("#edu").css("color", "#888");
+					$("#exp").css("color", "#888");
+					//$("#main_content").css("background-position", "0px 150px");	
+					//$("#main_content2").css("background-position", "300px 0px");	
+				}
+
+				if ($(document).scrollTop() >= $(window).height()*3 - 150) {
+					$("#intro").css("color", "#888");
+					$("#home").css("color", "#888");			
+					$("#edu").css("color", "#888");
+					$("#exp").css("color", "#FFF");
+					//$("#main_content3").css("background-position", "0px -210px");
+				}
+			})
+
+			$("#home").click(function() {
+				$("html, body").animate({
+					scrollTop : 0
+				});
+				return false;
+			});
+
+			$("#intro").click(function() {
+				$("html, body").animate({
+					scrollTop : $("#main_content").offset().top
+				});
+				return false;
+			});
+
+			$("#edu").click(function() {
+				$("html, body").animate({
+					scrollTop : $("#main_content2").offset().top
+				});
+				return false;
+			});
+
+			$("#exp").click(function() {
+				$("html, body").animate({
+					scrollTop : $("#main_content3").offset().top
+				});
+				return false;
+			});			
+
+
+			// do this on window resize
+
+			$(window).resize(function() {
+				$("#introduction").css("top", (($(window).height() - $("#introduction").height()) / 2) + "px");
+				$("#edu_table").css("top", (($(window).height() - $("#edu_table").height()) / 2) + "px");
+
+			});
+		});
+		</script>
 	</body>
 </html>

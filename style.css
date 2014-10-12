@@ -18,101 +18,10 @@ a {
 	color: #FFF;
 }
 
-/* eot's for IE */
-
-@font-face {
-	font-family: GothamLight;
-	src: url("fonts/Gotham-Light.eot");
-}
-
-@font-face {
-	font-family: GothamThin;
-	src: url("fonts/Gotham-Thin.eot");
-}
-
-@font-face {
-	font-family: GothamLight;
-	src: url("fonts/Gotham-Light.otf") format("opentype");
-	src: url("fonts/Gotham-Light.ttf") format("truetype");
-}
-
-@font-face {
-	font-family: GothamThin;
-	src: url("fonts/Gotham-Thin.otf") format("opentype");
-	src: url("fonts/Gotham-Thin.ttf") format("truetype");
-}
-
-@font-face {
-	font-family: SegoeUIL;
-	src: url("fonts/segoeuil.ttf") format("truetype");
-}
-
 body {
-	background: #FFF;
+	background: #C2453F;
 	overflow-x: hidden;
-}
-
-#main_wrapper {
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	width: 100%;
-	height: 100%;
-	background: white url("images/simple.jpg") no-repeat center center;
-	background-size: cover;
-}
-
-#navbar {
-	position: fixed;
-	top: 50px;
-	right: 0px;
-	width: 100%;
-	height: 55px;
-	background: transparent;
-	-webkit-transition: top 0.2s, background 0.2s;
-	-moz-transition: top 0.2s, background 0.2s;
-	transition: top 0.2s, background 0.2s;
-	-webkit-animation: fadeIn 2s;
-	z-index: 2;
-}
-
-@-webkit-keyframes fadeIn {
-	from {opacity: 0;}
-	to {opacity: 1;}
-}
-
-@-moz-keyframes fadeIn {
-	from {opacity: 0;}
-	to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-	from {opacity: 0;}
-	to {opacity: 1;}
-}
-
-#navbar ul {
-	position: absolute;
-	top: 0px;
-	right: 100px;
-	list-style-type: none;
-}
-
-#navbar ul li {
-	display: block;
-	float: left;
-	width: 150px;
-	height: 55px;
-	background: transparent url("images/three_bars.png") no-repeat;
-	background-size: 15px 10px;
-	background-position: 110px 22.5px;
-	font-family: GothamLight;
-	font-size: 15px;
-	font-weight: bold;
-	text-align: center;
-	line-height: 55px;
-	cursor: pointer;
-	color: #FFF;
+	font-family: Arial;
 }
 
 #sidebar {
@@ -121,7 +30,7 @@ body {
 	right: -250px;
 	width: 250px;
 	height: 100%;
-	background: #222;
+	background: #2A3239;
 }
 
 #close_sidebar {
@@ -138,6 +47,7 @@ body {
 	transition: background 0.2s;
 }
 
+
 #contents {
 	position: absolute;
 	top: 100px;
@@ -153,7 +63,7 @@ body {
 	width: auto;
 	height: 30px;
 	line-height: 30px;
-	font-family: GothamLight;
+	font-family: Raleway;
 	font-size: 15px;
 	color: #888;
 	cursor: pointer;
@@ -180,7 +90,7 @@ body {
 	text-align: center;
 	line-height: 50px;
 	color: #FFF;
-	font-family: GothamLight;
+	font-family: Raleway;
 	font-weight: bold;
 }
 
@@ -191,7 +101,7 @@ body {
 
 #welcome {
 	position: absolute;
-	top: calc(50% - 50px);
+	top: 150px;
 	left: calc(50% - 450px);
 	width: 900px;
 	height: 100px;
@@ -201,46 +111,6 @@ body {
 	line-height: 100px;
 	font-size: 70px;
 	color: #FFF;
-	-webkit-animation: fadeIn 2s;
-	-moz-animation: fadeIn 2s;
-	animation: fadeIn 2s;
-}
-
-#name {
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	width: 300px;
-	height: 55px;
-	line-height: 55px;
-	text-align: center;
-	color: #FFF;
-	font-family: GothamLight;
-	font-size: 17px;
-	font-weight: bold;
-	cursor: pointer;
-	-webkit-transition: color 1s;
-	-moz-transition: color 1s;
-	transition: color 1s;
-}
-
-#down_arrow {
-	position: absolute;
-	bottom: 0px;
-	left: 0px;
-	width: 100%;
-	height: 75px;
-	background: transparent url("images/down_arrow.png") no-repeat center center;
-	background-size: 75px;
-	cursor: pointer;
-	-webkit-transition: background-position 0.2s;
-	-moz-transition: background-position 0.2s;
-	transition: background-position 0.2s;
-	-webkit-animation: fadeIn 2s;
-}
-
-#down_arrow:hover {
-	background-position: center 10px;
 }
 
 #main_content {
@@ -251,6 +121,8 @@ body {
 	height: 100%;
 	background: #26343F url("images/peaks.png") no-repeat center center;
 	background-size: cover;
+	box-shadow: 0px 0px 15px #000;
+	z-index: 2;
 }
 
 #heading_title {
@@ -259,7 +131,7 @@ body {
 	height: 60px;
 	line-height: 60px;
 	text-align: center;
-	font-family: GothamLight;
+	font-family: Raleway;
 	font-weight: bold;
 	font-size: 50px;
 	color: #FFF;
@@ -271,7 +143,7 @@ body {
 	left: 5%;
 	width: 500px;
 	height: auto;
-	font-family: GothamLight;
+	font-family: Raleway;
 	font-size: 30px;
 	text-align: left;
 	color: #FFF;
@@ -283,8 +155,9 @@ body {
 	left: 0px;
 	width: 100%;
 	height: 100%;
-	background: #D2E294 url("images/bamboo.png") no-repeat center center;
-	background-size: cover;	
+	background: #CCC url("images/dark_hardwood.jpg");
+	box-shadow: 0px 0px 15px #000;
+	z-index: 1;
 }
 
 #edu_table {
@@ -292,9 +165,9 @@ body {
 	top: 200px;
 	left: calc(50% - 300px);
 	width: 600px;
-	font-family: GothamLight;
+	font-family: Raleway;
 	font-size: 30px;
-	color: green;
+	color: #FFF;
 	text-align: center;
 }
 
@@ -306,4 +179,46 @@ body {
 	height: 100%;
 	background: #FFF url("images/city.png") no-repeat center bottom;
 	background-size: 100%;
+}
+
+#under_cons {
+	margin: 0px auto;
+	width: 450px;
+	height: auto;
+	text-align: center;
+	font-size: 30px;
+	font-family: Raleway; 
+	font-weight: 300;
+}
+
+#footer {
+	position: absolute;
+	bottom: calc(-300% - 200px);
+	left: 0px;
+	width: 100%;
+	height: 200px;
+	z-index: 4;
+	background: #000;
+}
+
+#github {
+	position: absolute;
+	top: calc(50% - 32px);
+	left: 400px;
+	width: 250px;
+	height: 65px;
+	background: url('images/GitHub-Logo.png') no-repeat;
+	background-size: cover;
+	cursor: pointer;
+}
+
+#simpled {
+	position: absolute;
+	top: calc(50% - 10px);
+	right: 400px;
+	width: 255px;
+	height: 30px;
+	background: url('images/sd-logo.png') no-repeat;
+	background-size: cover;
+	cursor: pointer;
 }
