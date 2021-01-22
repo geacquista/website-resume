@@ -2,117 +2,105 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta name="description" content="Personal website for Sahibjot Saggu">
-		<meta name="keywords" content="personal, Sahibjot, Saggu, website, resume">
-		<meta name="author" content="Sahibjot Saggu">
+		<meta name="description" content="Gabrielle's Personal Website">
+		<meta name="keywords" content="personal, geacquista, website, resume">
+		<meta name="author" content="Gabrielle Acquista, forked from Sahibjot Saggu">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-		<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500' rel='stylesheet' type='text/css'>
-		<title>Sahibjot Saggu</title>
+		
+		<title>Gabrielle Acquista</title>
 		<link rel="stylesheet" type="text/css" href="style.css" />
 		<style type="text/css">
+
 		#main_wrapper {
 			position: absolute;
-			top: 0px;
+			top: -15px;
 			left: 0px;
 			width: 100%;
-			height: 100%;
-			background: white url("images/deer.png") no-repeat center center;
+			height: 105%;
+			background: rgb(190, 255, 250) url("images/welc.png") no-repeat center center;
 			opacity: 1;
 			background-size: cover;
-			box-shadow: 0px 0px 15px #000;
-			z-index: 3;
+			box-shadow: 0px 0px 15px rgb(233, 233, 233);
+			z-index: auto;
 		}
 
-		@-webkit-keyframes vis {
-			0% {opacity: 0;}
-			100% {opacity: 1;}
-		}
-
+		
 		#welcome {
-			position: absolute;
-			top: 150px;
-			left: calc(50% - 450px);
-			width: 900px;
-			height: 100px;
-			font-family: Raleway;
-			font-weight: 300;
+			position: relative;
+			top: 40%;
+			font-family: 'Courier New', Courier, monospace;
+			font-weight: 220;
 			text-align: center;
 			line-height: 100px;
-			font-size: 70px;
-			color: #FFF;
+			font-size: 80px;
+			color: rgb(255, 255, 255);
 		}
 
 		#down_arrow {
 			position: absolute;
-			bottom: 0px;
+			bottom: 20px;
 			left: 0px;
 			width: 100%;
 			height: 75px;
-			background: transparent url("images/down_arrow.png") no-repeat center center;
-			background-size: 75px;
+			background: transparent url("images/down.png") no-repeat center center;
+			background-size: 150px;
 			cursor: pointer;
-			-webkit-transition: background-position 0.2s;
-			-moz-transition: background-position 0.2s;
-			transition: background-position 0.2s;
+			transition: background-position 0.3s;
 		}
 
 		#down_arrow:hover {
-			background-position: center 10px;
+			background-position: center -50px;
 		}
 
 		#navbar {
 			position: fixed;
-			top: 50px;
+			top: -50px;
 			right: 0px;
 			width: 100%;
-			height: 55px;
+			height: 50px;
 			background: transparent;
-			-webkit-transition: top 0.2s, background 0.2s;
-			-moz-transition: top 0.2s, background 0.2s;
 			transition: top 0.2s, background 0.2s;
 			z-index: 3;
 		}
 
 		#navbar ul {
-			position: absolute;
-			top: 0px;
+			position: relative;
+			top: -50px;
 			right: 100px;
-			list-style-type: none;
 		}
 
 		#navbar ul li {
+			position: relative;
 			display: block;
-			float: left;
+			float:right;
+			top: 50px;
 			width: 150px;
-			height: 55px;
-			background: transparent url("images/three_bars.png") no-repeat;
-			background-size: 15px 10px;
-			background-position: 110px 22.5px;
-			font-family: Raleway;
-			font-size: 15px;
-			font-weight: bold;
+			height: 50px;
+			background: transparent url("images/menubutton.png") no-repeat;
+			background-size: 40px 35px;
+			background-position: 104px  4px;
+			font-family: 'Courier New', Courier, monospace;
+			font-size: 20px;
+			font-weight: 20px;
 			text-align: center;
-			line-height: 55px;
+			line-height: 50px;
 			cursor: pointer;
 			color: #FFF;
 		}	
 		
 		#name {
 			position: absolute;
-			top: 0px;
-			left: 0px;
+			top: -3px;
+			left: 50px;
 			width: 300px;
 			height: 55px;
 			line-height: 55px;
-			text-align: center;
+			text-align: left;
 			color: #FFF;
-			font-family: Raleway;
-			font-size: 17px;
-			font-weight: bold;
+			font-family: 'Courier New', Courier, monospace;
+			font-size: 20px;
 			cursor: pointer;
-			-webkit-transition: color 1s;
-			-moz-transition: color 1s;
-			transition: color 1s;
+			transition: color 3s;
 		}
 		</style>
 	</head>
@@ -120,14 +108,14 @@
 
 		<div id="main_wrapper">
 
-			<div id="welcome">Welcome.</div>
+			<div id="welcome">Hello World.</div>
 
 			<div id="down_arrow"></div>
 		</div> <!-- end main_wrapper div -->
 
 
 		<div id="navbar">
-			<div id="name">SAHIBJOT SAGGU</div>
+			<div id="name">GABRIELLE</div>
 			<ul>
 				<li id="menu">MENU</li>
 			</ul>
@@ -135,9 +123,9 @@
 
 
 		<div id="main_content">
-			<p id="heading_title">ABOUT ME</p>
+			<p id="heading_title">Who am I?</p>
 			<div id="introduction">
-				Hello. My name is Sahibjot Saggu. I'm a first-year university student at the <a href="http://www.uwaterloo.ca/">University of Waterloo</a> studying Nanotechnology Engineering.
+				Hi, my name is Gabrielle! I'm a second-year computer science student at <a href="https://www.wpi.edu/academics/study/computer-science-bs?gclid=CjwKCAiA6aSABhApEiwA6Cbm_9__BzEJzMgOgf-2hSjge_lh5bsNfGBsbS9Unk8Nm8f9jq0522fgDRoC-XsQAvD_BwE">Worcester Polytechnic Institute</a>. While pursuing my degree I'm learning to fine-tune my front-end development skills by practicing with HTML, JavaScript, and CSS!
 			</div>	
 		</div> <!-- end main_content div -->
 
@@ -166,13 +154,13 @@
 					<li id="intro">ABOUT ME</li>
 					<li id="edu">EDUCATION</li>
 					<li id="exp">EXPERIENCE</li>
-					<li>PORTFOLIO</li>
-					<li>DESIGN</li>
+					<li>UNDER CONSTRUCTION...</li>
+					<li>UNDER CONSTRUCTIONS...</li>
 				</ul>
 			</div>
 
 			<div id="sidebar_footer">
-				SAHIBJOT SAGGU
+				GABRIELLE ACQUISTA
 			</div>
 		</div> <!-- end sidebar div -->
 
