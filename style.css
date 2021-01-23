@@ -67,7 +67,7 @@ body {
 	width: auto;
 	height: 30px;
 	line-height: 30px;
-	font-family: Raleway;
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 15px;
 	color: #888;
 	cursor: pointer;
@@ -94,7 +94,7 @@ body {
 	text-align: center;
 	line-height: 50px;
 	color: #FFF;
-	font-family: Raleway;
+	font-family: 'Courier New', Courier, monospace;
 	font-weight: bold;
 }
 
@@ -125,30 +125,31 @@ body {
 	height: 100%;
 	background: #26343F url("images/hills.png") no-repeat center center;
 	background-size: cover;
-	box-shadow: 0px 0px 15px #000;
+	box-shadow: 0px 0px 15px rgb(70, 69, 69);
 	z-index: 2;
 }
 
 #heading_title {
-	margin: 100px auto;
-	width: 600px;
+	margin:100px auto;
+	width: 470px;
 	height: 60px;
 	line-height: 60px;
 	text-align: center;
-	font-family: Raleway;
-	font-weight: bold;
-	font-size: 50px;
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: 50%;
+	font-size: 56px;
 	color: #FFF;
 }
 
 #introduction {
 	position: absolute;
 	top: 0px;
-	left: 5%;
+	left: 50px;
 	width: 500px;
 	height: auto;
-	font-family: Raleway;
-	font-size: 30px;
+	font-family:'Courier New', Courier, monospace;
+	font-size: 24px;
+	font-weight: 80%;
 	text-align: left;
 	color: #FFF;
 }
@@ -159,8 +160,8 @@ body {
 	left: 0px;
 	width: 100%;
 	height: 100%;
-	background: #CCC url("images/dark_hardwood.jpg");
-	box-shadow: 0px 0px 15px #000;
+	background: #CCC url("images/back.png");
+	box-shadow: 0px 0px 15px dimgray;
 	z-index: 1;
 }
 
@@ -222,7 +223,7 @@ body {
 	right: 400px;
 	width: 255px;
 	height: 30px;
-	background: url('images/sd-logo.png') no-repeat;
+	background: url('images/carrot.png') no-repeat;
 	background-size: cover;
 	cursor: pointer;
 }
