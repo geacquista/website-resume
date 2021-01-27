@@ -44,9 +44,20 @@ $(document).ready(function(){
 	});
 
 	$("#down_arrow").click(function() {
+		
 		$("html, body").animate({
 			scrollTop : $("#main_content").offset().top
 		});
+		
+		return false;
+	});
+
+	$("#down_arrow2").click(function() {
+		
+		$("html, body").animate({
+			scrollTop : $("#main_content2").offset().top
+		});
+		
 		return false;
 	});
 
